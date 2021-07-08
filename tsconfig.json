@@ -21,11 +21,6 @@
       "node",
       "jest"
     ],
-    "baseUrl": "src",
-    "paths": {
-      "@/*": [
-        "*"
-      ]
-    }
+    "baseUrl": "src"
   }
 }

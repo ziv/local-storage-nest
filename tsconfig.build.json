@@ -20,12 +20,10 @@
     "types": [
       "node"
     ],
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["*"],
-    }
+    "baseUrl": "src"
   },
   "exclude": [
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "__mocks__"
   ]
 }
