@@ -65,7 +65,6 @@ Accessing `AsyncStorage` outside of the async context created by the `AsyncStora
 
 ---
 
+
+![@xpr](https://badgen.net/badge/powered%20by/@xpr/pink?icon=typescript)
 ![xpr-local-storage-nest](https://badgen.net/github/license/ziv/local-storage-nest)
-
-
-
