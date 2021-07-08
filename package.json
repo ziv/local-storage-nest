@@ -1,0 +1,109 @@
+{
+  "name": "@xpr/REPO_NAME",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "tsc --build tsconfig.build.json",
+    "postbuild": "cp package*.json lib/.",
+    "format": "eslint --fix src/**/*.ts && prettier --write src/**/*.ts",
+    "lint": "eslint",
+    "test": "jest",
+    "coverage": "jest --ci --coverage && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziv/REPO_NAME.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Ziv Perry (@xpr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ziv/REPO_NAME/issues"
+  },
+  "homepage": "https://github.com/ziv/REPO_NAME#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.3",
+    "@semantic-release/npm": "^7.1.3",
+    "@semantic-release/release-notes-generator": "^9.0.3",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.41",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "codecov": "^3.8.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "release": {
+    "branches": "main",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "lib"
+        }
+      ],
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/src/$1"
+    },
+    "coverageDirectory": "<rootDir>/coverage/",
+    "testPathIgnorePatterns": [
+      "<rootDir>/lib/",
+      "<rootDir>/node_modules/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/lib/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "tsconfig.json",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "ignorePatterns": [
+      "lib/*.*"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  }
+}
