@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/ziv/local-storage-nest/actions/workflows/main.yml/badge.svg)](https://github.com/ziv/local-storage-nest/actions/workflows/main.yml)
 [![CodeQL](https://github.com/ziv/local-storage-nest/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ziv/local-storage-nest/actions/workflows/codeql-analysis.yml)
+[![codecov](https://codecov.io/gh/ziv/local-storage-nest/branch/main/graph/badge.svg?token=4CXU2IUIL8)](https://codecov.io/gh/ziv/local-storage-nest)
 
 [AsyncLocalStorage](https://nodejs.org/api/async_context.html#async_context_class_asynclocalstorage) Module for NestJs wrap [local-storage](https://github.com/ziv/local-storage) middleware.
 
