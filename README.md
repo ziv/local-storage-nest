@@ -4,9 +4,11 @@
 [![CodeQL](https://github.com/ziv/local-storage-nest/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ziv/local-storage-nest/actions/workflows/codeql-analysis.yml)
 [![codecov](https://codecov.io/gh/ziv/local-storage-nest/branch/main/graph/badge.svg?token=4CXU2IUIL8)](https://codecov.io/gh/ziv/local-storage-nest)
 
-[AsyncLocalStorage](https://nodejs.org/api/async_context.html#async_context_class_asynclocalstorage) Module for NestJs wrap [local-storage](https://github.com/ziv/local-storage) middleware.
+[AsyncLocalStorage](https://nodejs.org/api/async_context.html#async_context_class_asynclocalstorage) Module for NestJs
+wrap [local-storage](https://github.com/ziv/local-storage) middleware.
 
 ## Install
+
 ```shell
 npm i @xpr/local-storage-nest
 ```
@@ -65,6 +67,6 @@ Accessing `AsyncStorage` outside of the async context created by the `AsyncStora
 
 ---
 
-
-![@xpr](https://badgen.net/badge/powered%20by/@xpr/pink?icon=typescript)
 ![xpr-local-storage-nest](https://badgen.net/github/license/ziv/local-storage-nest)
+![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg)
+![@xpr](https://badgen.net/badge/powered%20by/@xpr/pink)
