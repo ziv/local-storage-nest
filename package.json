@@ -107,7 +107,7 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
-    "@nestjs/common": "^8.2.2",
+    "@nestjs/common": "^8.3.1",
     "@nestjs/core": "^8.0.6",
     "@xpr/local-storage": "^1.0.0"
   }
